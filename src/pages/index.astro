@@ -1,0 +1,23 @@
+---
+import BadgeContact from "../components/BadgeContact.astro";
+import About from "../components/About.astro";
+import Contacts from "../components/Contacts.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title='Soy Nicolas Escobar'>
+  <main class='flex flex-col justify-center gap-8 mx-auto w-[80%] max-w-[850px] py-6'>
+    <div class='flex flex-row items-center justify-start gap-4 pt-44 pb-6 w-4/5'>
+      <img src='./brackets.svg' alt='brackets' class='w-20' />
+      <h1 class='text-5xl font-bold'>Soy Nicolas Escobar</h1>
+    </div>
+    <div class='flex flex-row gap-2'>
+      <BadgeContact image='github' link='/#'>Github</BadgeContact>
+      <BadgeContact image='linkedin' link='/#'>Linkedin</BadgeContact>
+      <BadgeContact image='instagram' link='/#'>Instagram</BadgeContact>
+      <BadgeContact image='mail' link='/#'>Email</BadgeContact>
+      <BadgeContact link='/#'>✨Look that CV</BadgeContact>
+    </div>
+    <About/>
+  </main>
+</Layout>

@@ -1,0 +1,33 @@
+---
+import Image from "astro/components/Image.astro";
+import myImage from "../../public/my-logo.jpg";
+---
+
+<header
+  class='flex justify-between items-center my-5 p-5 rounded-2xl mx-auto w-[60%] 2xl:w-[1120px]'>
+  <Image src={myImage} width={48} height={48} alt='...' class='w-12 rounded-full' loading="eager"/>
+  <nav class='flex flex-row gap-x-5'>
+    <ul class='flex flex-row gap-5 font-bold'>
+      <li><a class='opacity-80 hover:opacity-100' href='/'>Home</a></li>
+      <li><a class='opacity-80 hover:opacity-100' href='/about'>About</a></li>
+      <li>
+        <a class='opacity-80 hover:opacity-100' href='/blog'>Proyectos</a>
+      </li>
+      <li>
+        <a class='opacity-80 hover:opacity-100' href='/contact'>Contacto</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(26, 28, 36, 0.781);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+</style>
